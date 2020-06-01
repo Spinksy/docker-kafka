@@ -14,12 +14,14 @@ Launches Kafka
 *Kafka manager is a tool from Yahoo Inc. for managing Apache Kafka.*
 
 ## Update hosts file
-Append 127.0.0.1 kafkaserver *(c:\windows\system32\etc\hosts)
+Append 127.0.0.1 kafkaserver *(c:\windows\system32\drivers\etc\hosts)
 
 ## Hack - jvm.dll
 Added /server path, and copy jvm.dll from /client to /server/jvm.dll
 
 ## Start consumer script - listen to _topic topic
+
+    From /kafka/bin/windows directory
 
     .\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafka_test_topic
 
